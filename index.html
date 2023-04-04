@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <style>
+        section {
+            background-image: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+            background-size: cover;
+        }
+        @media screen and (max-width:600px) {
+            
+            main{
+                grid-template-columns: auto;
+            }
+        }
+    </style>
+</head>
+
+<body class="">
+    <header class="flex flex-col fixed bg-white w-full">
+        <nav class="flex items-center gap-3 px-6 py-3 ">
+            <!-- logo -->
+            <img class="h-8 cursor-pointer"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEUAAAD////V1dWWlpZ0dHTPz89qamrh4eGQkJDk5OTR0dGtra3Y2NgWv+ptAAABL0lEQVR4nO3cMQ7CQAxFwQCBQOD+56Wms2RHxjDvAKs/vbXLqaR1qW+tmbbUPENISJiIMBghIWEiwmCEhISJCIMREhImIgxGSEiYiDAYISFhIsJghISEiQiDERISJiIMRkhImIgwGCEhYSLCYISEhIkIgxESEiYiDPb7wtsBwlvNtCLhdq5vq5lWJPziCOdHOD/C+RHOj3B+hPMjnB/h/AjnRzg/wvkRzo9wfoTzI5wf4fz+QHip6P44YNrjXrKt6KrgeoDwWrStJkJCwv4ICQn7IyQk7I+QkLA/QkLC/ggJCfsjJCTsj5CQsD9CQsL+CAkJ+yMkJOyPkJCwP0JCwv4ICQn7IyQk7G8/QLh3oz56vsq/oH09u1GSJEmSJEmSJEmSJEmSJEmSJEmSJP1rbwwaXQZE0kwUAAAAAElFTkSuQmCC"
+                alt="">
+            <!-- search bar -->
+            <div class="bg-gray-100 rounded-full flex items-center px-4">
+                <i class="fa-regular fa-magnifying-glass cursor-pointer text-gray-600"></i>
+                <input class="text-sm px-4 py-2 w-[30rem] bg-transparent outline-none" type="search"
+                    placeholder="Search high-resolution free photos">
+                <i class="fa-light fa-camera-viewfinder cursor-pointer text-gray-600"></i>
+            </div>
+            <!-- nav links -->
+            <div class="flex items-center divide-x divide-gray-300 text-gray-500 text-sm ml-auto">
+                <div class="space-x-8 pr-8">
+                    <a href="#" class="hover:text-gray-800 transition-colors">Explore</a>
+                    <a href="#" class="hover:text-gray-800 transition-colors">Advertise</a>
+                    <a class="bg-gradient-to-tr from-purple-600 to-yellow-500 bg-clip-text text-transparent hover:" href="#">Unsplash+</a>
+                </div>
+                <div class="space-x-4 pl-8">
+                    <a href="">Log in</a>
+                    <span>/</span>
+                    <a href="">Sign up</a>
+                    <button class="py-1 px-2 border rounded-md hover:border-gray-800 hover:text-gray-800 transition-colors">Submit a photo</button>
+                </div>
+            </div>
+            <i class="fa-regular fa-bars text-xl ml-2 text-gray-500 hover:text-gray-800"></i>
+        </nav>
+        <nav class="flex items-center divide-x">
+            <h3 class="py-2 px-4 border-b-2 border-black">Editorial</h3>
+            <ul class="flex text-sm text-gray-500 space-x-6 pl-4">
+                <li class="hover:text-gray-800 transition-colors cursor-pointer">FeaturedFood & Drink</li>
+                <li class="hover:text-gray-800 transition-colors cursor-pointer">Current Events</li>
+                <li class="hover:text-gray-800 transition-colors cursor-pointer">Wallpapers</li>
+                <li class="hover:text-gray-800 transition-colors cursor-pointer">3D Renders</li>
+                <li class="hover:text-gray-800 transition-colors cursor-pointer">Textures & Patterns</li>
+                <li class="hover:text-gray-800 transition-colors cursor-pointer">Experimental</li>
+                <li class="hover:text-gray-800 transition-colors cursor-pointer">Architecture</li>
+                <li class="hover:text-gray-800 transition-colors cursor-pointer">Nature</li>
+                <li class="hover:text-gray-800 transition-colors cursor-pointer">Business & Work</li>
+                <li class="hover:text-gray-800 transition-colors cursor-pointer">Fashion</li>
+                <li class="hover:text-gray-800 transition-colors cursor-pointer">Film</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="h-screen w-full flex justify-center items-center">
+        <div class="space-y-4 w-[45rem]">
+            <h1 class="font-bold text-white text-6xl">Unsplash</h1>
+            <p class="text-white w-60">The internet’s source for visuals.
+                Powered by creators everywhere.</p>
+            <div class="text-xl">
+                <div class="bg-gray-100 w-full  rounded-md flex items-center px-4">
+                    <i class="fa-regular fa-magnifying-glass cursor-pointer text-gray-600"></i>
+                    <input class="text-sm px-4 py-4 w-full bg-transparent outline-none" type="search"
+                        placeholder="Search high-resolution free photos">
+                    <i class="fa-light fa-camera-viewfinder cursor-pointer text-gray-600"></i>
+                </div>
+                <a class="text-white text-sm" href="">Trending:flower,wallpapers,backgrounds,happy,love</a>
+            </div>
+    </section>
+    <main class="grid grid-cols-3 gap-4 p-4">
+        <div class="flex flex-col gap-4">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1659535861581-ba057b067494?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666058091121-0362ddfa5c8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666068671358-799c1fa6e495?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666276845220-7b94f61e3d35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666278885974-cb4ffbb2c606?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666058091312-7cbb7d771f6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666224182627-7dc792e4b419?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666190486038-945cf8ad9856?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1633815475307-884ad652b80b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666133619062-8c3621ba7322?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666118704505-068a65b5283f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666166079252-607e0759766b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666130819825-b822593e90bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666122093052-82dda8cff1be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666221340457-1af7d0be8ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+        </div>
+        <div class="flex flex-col gap-4">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666167494533-73460f339cf5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3N3x8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666207482115-53756be8a995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3OHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666225354836-9a0f1049f223?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3OXx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666208148881-1de44c9b2631?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4MHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1661347335435-6d851eb110f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw4MXx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666211146876-1396582a8349?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666121636787-7023d9ba4c80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4NHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666202955112-d0226d1282b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4OHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666214742880-97f4fe5e65fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5MHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666123853728-7c69918bc537?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5NXx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="image.png" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666167494306-af347c4f0fec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5N3x8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666213233530-1891c515baf6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5OHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666059368813-3b84b929e28d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666127574098-9a7b00e97049?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+        </div>
+        <div class="flex flex-col gap-4">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1665999370084-24cb0d36d423?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666167495201-aef3606a586e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666179497017-7d6336d65ba1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666180977464-f8df2f6876f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666059369028-e9764ee10fb5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMjJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666114478824-c763b02562b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMjV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666146421175-28a429221ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMjh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666120565124-7e763880444a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMzB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666147775717-65fa1fe0c47b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMzJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666060519909-7829e02c4313?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMzZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666112835145-d79fc3f2e008?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMzd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666126431272-8bffcafa6fb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMzh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1666107730458-57486ae22a4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="https://images.unsplash.com/photo-1664574653006-4d7eb5f1a418?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNTV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="">
+            <img class="rounded-md" src="image.png" alt="">
+        </div>
+    </main>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+
+</html>
